@@ -44,11 +44,11 @@ Posteriormente, utilizei expressões regulares para validar se a placa inserida 
 Se a placa inserida estiver em um dos formatos aceitáveis, ela é adicionada a uma lista de veículos registrados, exibindo uma mensagem de sucesso. Caso contrário, o sistema informa que a placa é inválida.</br>
 ![AdicionarVeiculo](AdiconarVeiculo.png) 
 </br>
+
 - <strong>RemoverVeiculo()</strong> permite a remoção de um veículo estacionado. O usuário é solicitado a inserir a placa do veículo que deseja remover. A entrada é convertida para letras maiúsculas para garantir consistência.</br>
 O sistema pede ao usuário para inserir a quantidade de horas que o veículo permaneceu estacionado, convertento o valor de string para int.</br>
 Em seguida, com base nas horas fornecidas pelo usuário, o código calcula o valor total a ser pago pelo estacionamento. Esse valor é calculado usando um preço inicial e um preço por hora definidos previamente.</br>
 Posteriormente, o veículo associado à placa inserida é removido da lista de veículos estacionados, e uma mensagem é exibida informando que o veículo foi removido com sucesso, juntamente com o preço total do estacionamento.</br>
-
 ![RemoverVeiculo](RemoverVeiculo.png)
 </br>
 
