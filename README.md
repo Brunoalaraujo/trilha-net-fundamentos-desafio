@@ -48,7 +48,9 @@ Se a placa inserida estiver em um dos formatos aceitáveis, ela é adicionada a 
 O sistema pede ao usuário para inserir a quantidade de horas que o veículo permaneceu estacionado, convertento o valor de string para int.</br>
 Em seguida, com base nas horas fornecidas pelo usuário, o código calcula o valor total a ser pago pelo estacionamento. Esse valor é calculado usando um preço inicial e um preço por hora definidos previamente.</br>
 Posteriormente, o veículo associado à placa inserida é removido da lista de veículos estacionados, e uma mensagem é exibida informando que o veículo foi removido com sucesso, juntamente com o preço total do estacionamento.</br>
+
 ![RemoverVeiculo](RemoverVeiculo.png)
 </br>
+
 - <strong>ListarVeiculos()</strong> verifica se há veículos estacionados na lista. Se houver algum veículo, o método percorre a lista utilizando um laço de repetição foreach e exibe cada veículo presente no estacionamento no console.</br>
 ![ListarVeiculo](ListarVeiculo.png)
