@@ -39,16 +39,25 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 
 ## <h1 id="solucao" >Solução Desenvolvida </h1> 
 
-- <strong>AdicionarVeiculo()</strong> solicita ao usuário que insira a placa de um veículo para estacionamento. Em seguida, converte essa entrada para letras maiúsculas. </br>
-Posteriormente, utilizei expressões regulares para validar se a placa inserida corresponde a um dos dois formatos esperados: o formato convencional (ABC-1234) ou o formato do modelo Mercosul (ABC1D23).</br>
-Se a placa inserida estiver em um dos formatos aceitáveis, ela é adicionada a uma lista de veículos registrados, exibindo uma mensagem de sucesso. Caso contrário, o sistema informa que a placa é inválida.</br>
+- <strong>AdicionarVeiculo()</strong> solicita ao usuário que insira a placa de um veículo para estacionamento. Em seguida, converte essa entrada para letras maiúsculas.
+</br>
+Posteriormente, utilizei expressões regulares para validar se a placa inserida corresponde a um dos dois formatos esperados: o formato convencional (ABC-1234) ou o formato do modelo Mercosul (ABC1D23).
+</br>
+Se a placa inserida estiver em um dos formatos aceitáveis, ela é adicionada a uma lista de veículos registrados, exibindo uma mensagem de sucesso. Caso contrário, o sistema informa que a placa é inválida.
+</br>
+
 ![AdicionarVeiculo](AdiconarVeiculo.png) 
 </br>
 
-- <strong>RemoverVeiculo()</strong> permite a remoção de um veículo estacionado. O usuário é solicitado a inserir a placa do veículo que deseja remover. A entrada é convertida para letras maiúsculas para garantir consistência.</br>
-O sistema pede ao usuário para inserir a quantidade de horas que o veículo permaneceu estacionado, convertento o valor de string para int.</br>
-Em seguida, com base nas horas fornecidas pelo usuário, o código calcula o valor total a ser pago pelo estacionamento. Esse valor é calculado usando um preço inicial e um preço por hora definidos previamente.</br>
-Posteriormente, o veículo associado à placa inserida é removido da lista de veículos estacionados, e uma mensagem é exibida informando que o veículo foi removido com sucesso, juntamente com o preço total do estacionamento.</br>
+- <strong>RemoverVeiculo()</strong> permite a remoção de um veículo estacionado. O usuário é solicitado a inserir a placa do veículo que deseja remover. A entrada é convertida para letras maiúsculas para garantir consistência.
+</br>
+O sistema pede ao usuário para inserir a quantidade de horas que o veículo permaneceu estacionado, convertento o valor de string para int.
+</br>
+Em seguida, com base nas horas fornecidas pelo usuário, o código calcula o valor total a ser pago pelo estacionamento. Esse valor é calculado usando um preço inicial e um preço por hora definidos previamente.
+</br>
+Posteriormente, o veículo associado à placa inserida é removido da lista de veículos estacionados, e uma mensagem é exibida informando que o veículo foi removido com sucesso, juntamente com o preço total do estacionamento.
+</br>
+
 ![RemoverVeiculo](RemoverVeiculo.png)
 </br>
 
