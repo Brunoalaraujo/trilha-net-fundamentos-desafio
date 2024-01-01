@@ -31,12 +31,19 @@ namespace DesafioFundamentos.Models
             // Adicionar na lista "veiculos"
             if (modeloPlacaAntiga.IsMatch(novaPlaca) || modeloPlacaMercosul.IsMatch(novaPlaca)) // Compara a novaPlaca com a Regex
             {
-                veiculos.Add(novaPlaca);
-                Console.WriteLine($"Veículo com a placa {novaPlaca}, foi cadastrado com sucesso!");
+                if (veiculos.Contains(novaPlaca)) // Vetifica se a placa já está cadastrada no sistema
+                {
+                    Console.WriteLine($"ERRO ao Cadastratar!! A placa {novaPlaca} já está cadastrada no sistema");
+                }
+                else
+                {
+                    veiculos.Add(novaPlaca);
+                    Console.WriteLine($"Veículo com a placa {novaPlaca}, foi cadastrado com sucesso!");
+                }
             }
             else
             {
-                Console.WriteLine($"A placa {novaPlaca} é inválida");
+                Console.WriteLine($"A placa {novaPlaca} é inválida, usar formato AAA-1234 ou AAA1A23");
             }
 
         }
@@ -57,14 +64,14 @@ namespace DesafioFundamentos.Models
                 decimal valorTotal = 0;
 
                 // Converte a quantidade de horas que o veículo permaneceu estacionado, digitado pelo usuário, em int
-                horas = int.Parse(Console.ReadLine());
+                int.TryParse(Console.ReadLine(), out horas);
 
                 // Calcula valor total                
                 valorTotal = precoInicial + (precoPorHora * horas);
 
                 // Remover a placa digitada da lista de veículos
                 veiculos.Remove(placa);
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal:C}");
             }
             else
             {
